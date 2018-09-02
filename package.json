@@ -1,0 +1,42 @@
+{
+  "name": "express-web-cluster",
+  "version": "1.0.0",
+  "description": "Basic Express Web Cluster service.  Simple for use as a nice web service for starting up full configured.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augmentedjs/express-web-cluster.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Augmentedjs/express-web-cluster/issues"
+  },
+  "homepage": "https://github.com/Augmentedjs/express-web-cluster#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "method-override": "~2.3.6",
+    "mongoclient": "^1.0.3",
+    "mongoose": "~4.13.1",
+    "passport": "~0.3.2",
+    "passport-local": "~1.0.0",
+    "query-string": "^6.1.0",
+    "winston": "^3.0.0"
+  }
+}
